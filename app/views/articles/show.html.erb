@@ -1,4 +1,5 @@
 <h1><%= @article.title %></h1>
+<<<<<<< HEAD
 <p>
   Tags:
   <% @article.tags.each do |tag| %>
@@ -6,6 +7,8 @@
   <% end %>
 </p>
 
+=======
+>>>>>>> 1df67ef37c1166f17792f5db46c2fea5809464b1
 <p><%= @article.body %></p>
 <h3>Comments (<%= @article.comments.size %>)</h3>
 <%= render partial: 'articles/comment' , collection: @article.comments %>

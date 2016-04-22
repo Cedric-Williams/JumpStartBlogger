@@ -1,5 +1,6 @@
 class Article < ActiveRecord::Base
 	has_many :comments
+<<<<<<< HEAD
 	has_many :taggings
 	has_many :tags, through: :taggings
 
@@ -13,4 +14,6 @@ class Article < ActiveRecord::Base
   		self.tags = new_or_found_tags
 	end
 
+=======
+>>>>>>> 1df67ef37c1166f17792f5db46c2fea5809464b1
 end

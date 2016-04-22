@@ -11,7 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20160422163855) do
+=======
+ActiveRecord::Schema.define(version: 20160420213833) do
+>>>>>>> 1df67ef37c1166f17792f5db46c2fea5809464b1
 
   create_table "articles", force: :cascade do |t|
     t.string   "title"
@@ -30,6 +34,7 @@ ActiveRecord::Schema.define(version: 20160422163855) do
 
   add_index "comments", ["article_id"], name: "index_comments_on_article_id"
 
+<<<<<<< HEAD
   create_table "taggings", force: :cascade do |t|
     t.integer "tag_id"
     t.integer "article_id"
@@ -42,4 +47,6 @@ ActiveRecord::Schema.define(version: 20160422163855) do
     t.string "name"
   end
 
+=======
+>>>>>>> 1df67ef37c1166f17792f5db46c2fea5809464b1
 end
